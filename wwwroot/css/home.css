@@ -1,0 +1,478 @@
+        body {
+            font-family: cursive;
+            background: url("../image/fundo.webp");
+            background-size: cover;
+        }
+        
+        p {
+            text-align: justify;
+            text-indent: 50px;
+        }
+        /*============== Menu Principal =============*/
+        
+        .container-fluid {
+            padding: 0px;
+            width: 100%;
+        }
+        
+        .navega {
+            margin: 8px;
+        }
+        
+        .navegacao {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            flex-flow: row wrap;
+            list-style: none;
+            padding: 10px;
+            background: url("../image/banner/home3.jpg");
+            background-size: cover;
+            box-shadow: 4px 4px 5px rgba(0, 0, 0, .5);
+        }
+        
+        header {
+            width: 100%;
+        }
+        
+        .navegacao a {
+            border-top: 5px red solid;
+            border-bottom: 5px #606060 solid;
+            color: #606060;
+            display: block;
+            text-decoration: none;
+            text-transform: uppercase;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, .5);
+            border-radius: 20px 0 20px 0;
+            background-color: white;
+            box-shadow: 1px 1px 3px black;
+            padding: 10px;
+            -webkit-transition: all .2s ease-in;
+        }
+        
+        .navegacao a:hover {
+            background-color: white;
+            -webkit-transform: scale(1.2);
+            border-bottom: 5px red solid;
+            border-top: 5px #606060 solid;
+            color: red;
+            text-shadow: 1px 1px 3px black;
+            font-size: 13pt;
+        }
+        /*============== Menu Principal =============*/
+        
+        main {
+            background: url("../image/fundo.webp");
+            background-size: cover;
+            box-shadow: 1px 1px 3px black;
+        }
+        /*============== Artigo Empresa =============*/
+        
+        .empresas {
+            padding: 10px;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        
+        .empresa {
+            flex-flow: row wrap;
+        }
+        
+        #emp {
+            background: url("../image/fundo.jpg");
+            background-size: cover;
+            border-radius: 20px 0 20px 0;
+            border-top: 5px red solid;
+            border-bottom: 5px red solid;
+            box-shadow: 1px 1px 3px black;
+            width: 350px;
+            margin: 20px;
+            -webkit-transition: all .2s ease-in;
+            border-left: 5px whitesmoke dashed;
+            border-right: 5px whitesmoke dashed;
+        }
+        
+        #emp:hover {
+            background: url("../image/fundo.webp");
+            background-size: cover;
+            border-radius: 20px 0 20px 0;
+            border-top: 5px red solid;
+            border-bottom: 5px red solid;
+            box-shadow: 1px 1px 3px black;
+            -webkit-transform: scale(1.1);
+        }
+        
+        #emp h1 {
+            font-size: 20pt;
+            text-align: center;
+            background: url("../image/fundo.webp");
+            background-size: cover;
+            padding: 10px;
+            border-radius: 20px 0 20px 0;
+            border-top: 5px red solid;
+            border-bottom: 5px red solid;
+            box-shadow: 1px 1px 3px black;
+            color: red;
+            text-shadow: 1px 1px 3px black;
+            margin: 10px;
+        }
+        
+        #emp h1:hover {
+            font-size: 20pt;
+            text-align: center;
+            background: url("../image/fundo.jpg");
+            background-size: cover;
+            padding: 10px;
+            border-radius: 20px 0 20px 0;
+            border-top: 5px red solid;
+            border-bottom: 5px red solid;
+            box-shadow: 1px 1px 3px black;
+            color: red;
+            text-shadow: 1px 1px 3px black;
+            margin: 10px;
+        }
+        
+        #emp h2 {
+            font-size: 15pt;
+            text-align: center;
+            background: url("../image/fundo.webp");
+            background-size: cover;
+            padding: 10px;
+            border-radius: 20px 0 20px 0;
+            border-top: 5px red solid;
+            border-bottom: 5px red solid;
+            box-shadow: 1px 1px 3px black;
+            color: red;
+            text-shadow: 1px 1px 3px black;
+            margin: 10px;
+        }
+        
+        #emp h2:hover {
+            font-size: 15pt;
+            text-align: center;
+            background: url("../image/fundo.jpg");
+            background-size: cover;
+            padding: 10px;
+            border-radius: 20px 0 20px 0;
+            border-top: 5px red solid;
+            border-bottom: 5px red solid;
+            box-shadow: 1px 1px 3px black;
+            color: white;
+            text-shadow: 1px 1px 3px black;
+            margin: 10px;
+        }
+        
+        img#emp {
+            border-radius: 20px 0 20px 0;
+            border-top: 5px red solid;
+            border-bottom: 5px red solid;
+            box-shadow: 1px 1px 3px black;
+            -webkit-transition: all .2s ease-in;
+        }
+        
+        img#emp:hover {
+            -webkit-transform: scale(1.1);
+        }
+        /*============== Artigo Empresa =============*/
+        /*============== Artigo Qualidade =============*/
+        
+        .qualidades {
+            padding: 10px;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        
+        .qualidade {
+            padding: 10px;
+            margin: 10px;
+        }
+        
+        #qua {
+            background: url("../image/fundo.jpg");
+            background-size: cover;
+            border-radius: 20px 0 20px 0;
+            border-top: 5px red solid;
+            border-bottom: 5px red solid;
+            box-shadow: 1px 1px 3px black;
+            width: 350px;
+            margin: 20px;
+            -webkit-transition: all .2s ease-in;
+            border-left: 5px whitesmoke dashed;
+            border-right: 5px whitesmoke dashed;
+        }
+        
+        #qua:hover {
+            background: url("../image/fundo.webp");
+            background-size: cover;
+            border-radius: 20px 0 20px 0;
+            border-top: 5px red solid;
+            border-bottom: 5px red solid;
+            box-shadow: 1px 1px 3px black;
+            -webkit-transform: scale(1.1);
+        }
+        
+        #qua h1 {
+            font-size: 20pt;
+            text-align: center;
+            background: url("../image/fundo.webp");
+            background-size: cover;
+            padding: 10px;
+            border-radius: 20px 0 20px 0;
+            border-top: 5px red solid;
+            border-bottom: 5px red solid;
+            box-shadow: 1px 1px 3px black;
+            color: red;
+            text-shadow: 1px 1px 3px black;
+            margin: 10px;
+        }
+        
+        #qua h1:hover {
+            font-size: 20pt;
+            text-align: center;
+            background: url("../image/fundo.jpg");
+            background-size: cover;
+            padding: 10px;
+            border-radius: 20px 0 20px 0;
+            border-top: 5px red solid;
+            border-bottom: 5px red solid;
+            box-shadow: 1px 1px 3px black;
+            color: red;
+            text-shadow: 1px 1px 3px black;
+            margin: 10px;
+        }
+        
+        #qua h2 {
+            font-size: 15pt;
+            text-align: center;
+            background: url("../image/fundo.webp");
+            background-size: cover;
+            padding: 10px;
+            border-radius: 20px 0 20px 0;
+            border-top: 5px red solid;
+            border-bottom: 5px red solid;
+            box-shadow: 1px 1px 3px black;
+            color: red;
+            text-shadow: 1px 1px 3px black;
+            margin: 10px;
+        }
+        
+        #qua h2:hover {
+            font-size: 15pt;
+            text-align: center;
+            background: url("../image/fundo.jpg");
+            background-size: cover;
+            padding: 10px;
+            border-radius: 20px 0 20px 0;
+            border-top: 5px red solid;
+            border-bottom: 5px red solid;
+            box-shadow: 1px 1px 3px black;
+            color: white;
+            text-shadow: 1px 1px 3px black;
+            margin: 10px;
+        }
+        
+        img#qld {
+            border-radius: 20px 0 20px 0;
+            border-top: 5px red solid;
+            border-bottom: 5px red solid;
+            box-shadow: 1px 1px 3px black;
+            -webkit-transition: all .2s ease-in;
+            border-left: 5px #606060 dashed;
+            border-right: 5px #606060 dashed;
+        }
+        
+        img#qld:hover {
+            -webkit-transform: scale(1.1);
+            border-left: 5px whitesmoke dashed;
+            border-right: 5px whitesmoke dashed;
+        }
+        
+        img#equipamento {
+            border-radius: 20px 0 20px 0;
+            border-top: 5px red solid;
+            border-bottom: 5px red solid;
+            box-shadow: 1px 1px 3px black;
+            -webkit-transition: all .2s ease-in;
+            width: 350px;
+            border-left: 5px #606060 dashed;
+            border-right: 5px #606060 dashed;
+        }
+        
+        img#equipamento:hover {
+            -webkit-transform: scale(1.1);
+            border-left: 5px whitesmoke dashed;
+            border-right: 5px whitesmoke dashed;
+        }
+        /*============== Artigo Qualidade =============*/
+        /*============== Sessão Industrias ============*/
+        
+        .industrias {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-evenly;
+            padding: 30px;
+        }
+        
+        section h1 {
+            font-size: 20pt;
+            text-align: center;
+            background: url("../image/fundo.jpg");
+            background-size: contain;
+            padding: 10px;
+            border-radius: 20px 0 20px 0;
+            border-top: 5px red solid;
+            border-bottom: 5px red solid;
+            box-shadow: 1px 1px 3px black;
+            color: white;
+            text-shadow: 1px 1px 3px black;
+            margin: 20px;
+        }
+        
+        section h1:hover {
+            font-size: 20pt;
+            text-align: center;
+            background: url("../image/fundo.webp");
+            background-size: contain;
+            padding: 10px;
+            border-radius: 20px 0 20px 0;
+            border-top: 5px red solid;
+            border-bottom: 5px red solid;
+            box-shadow: 1px 1px 3px black;
+            color: red;
+            text-shadow: 1px 1px 3px black;
+            margin: 20px;
+        }
+        
+        .industria {
+            flex-flow: row wrap;
+            margin: 20px;
+        }
+        
+        .industria figcaption {
+            font-size: 10pt;
+            text-shadow: 1px 1px 3px black;
+            text-align: center;
+            border-radius: 20px;
+            background-color: rgba(255, 0, 0, .5);
+            color: white;
+            -webkit-transition: all .2s ease-in;
+            border-radius: 20px 0 20px 0;
+            margin: 5px;
+            padding: 3px;
+            border-top: 5px red dashed;
+            border-left: 5px #606060 dashed;
+            border-right: 5px #606060 dashed;
+        }
+        
+        .industria figcaption {
+            -webkit-transform: scale(1.1);
+        }
+        
+        .industria img {
+            width: 200px;
+            height: 200px;
+            border-radius: 20px 0 20px 0;
+            border-top: 5px red solid;
+            border-bottom: 5px red solid;
+            box-shadow: 1px 1px 3px black;
+            -webkit-transition: all .2s ease-in;
+            border-left: 5px #606060 dashed;
+            border-right: 5px #606060 dashed;
+        }
+        
+        .industria img:hover {
+            -webkit-transform: scale(1.4);
+            border-left: 5px whitesmoke dashed;
+            border-right: 5px whitesmoke dashed;
+        }
+        /*============== Sessão Industrias ============*/
+        /*============== footer ============*/
+        
+        .rodape {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-evenly;
+            background: url("../image/banner/cliente.jpg");
+            background-size: cover;
+            padding: 10px;
+        }
+        
+        .roda {
+            flex-flow: wrap;
+        }
+        
+        footer {
+            box-shadow: 1px 1px 5px black;
+        }
+        
+        footer h1 {
+            font-size: 15pt;
+            text-align: center;
+            padding: 10px;
+            border-radius: 20px 20px 0 0;
+            color: white;
+            text-shadow: 1px 1px 3px black;
+        }
+        
+        footer h1:hover {
+            font-size: 15pt;
+            text-align: center;
+            padding: 10px;
+            border-radius: 20px 20 0 0;
+            color: #cecece;
+            text-shadow: 1px 1px 3px black;
+        }
+        
+        img#p {
+            background-color: white;
+            margin: 15px;
+            border-radius: 20px 0 20px 0;
+            border-top: 5px red solid;
+            border-bottom: 5px red solid;
+            box-shadow: 1px 1px 3px black;
+            border-left: 5px #606060 dashed;
+            border-right: 5px #606060 dashed;
+            -webkit-transition: all .2s ease-in;
+        }
+        
+        img#p:hover {
+            background-color: white;
+            -webkit-transform: scale(1.1);
+            border-left: 5px whitesmoke dashed;
+            border-right: 5px whitesmoke dashed;
+        }
+        
+        footer a {
+            color: white;
+            text-decoration: none;
+            text-shadow: 1px 1px 3px black;
+        }
+        
+        footer a:hover {
+            text-shadow: 1px 1px 3px black;
+            color: deepskyblue;
+            text-decoration: none;
+        }
+        
+        footer li {
+            margin: 5px;
+        }
+        
+        footer ul {
+            margin-bottom: 50px;
+        }
+        
+        .bi-facebook,
+        .bi-linkedin,
+        .bi-instagram,
+        .bi-whatsapp {
+            margin-top: 25px;
+            margin-right: 10px;
+            color: white;
+        }
+        
+        .bi-capslock-fill {
+            margin-top: 25px;
+            margin-right: 10px;
+        }
+        /*============== footer ============*/

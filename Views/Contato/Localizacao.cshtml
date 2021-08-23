@@ -1,0 +1,34 @@
+@{
+    ViewData["Title"] = "Contato - ";
+      <link rel="stylesheet" href="~/css/contato.css"!important>
+    <link rel="stylesheet" href="~/css/reset.css" !important>
+}
+ <section>
+            <h1>Contato</h1>
+            <div class="contatos">
+
+                <div class="contato">
+                      <nav>
+                            <ul>
+                                <li><a asp-area="" asp-controller="Contato" asp-action="FaleConosco">fale Conosco</a></li>
+                                <li><a asp-area="" asp-controller="Contato" asp-action="Carreira">Carreira</a></li>
+                                <li><a asp-area="" asp-controller="Contato" asp-action="Localizacao">Localização</a></li>
+                                <li><a asp-area="" asp-controller="Contato" asp-action="Ouvidoria">Ouvidoria</a></li>
+                            </ul>
+                        </nav>
+                </div>
+                <div class="contato">
+                    <article class="texto">
+                        <h2>Localização</h2>
+                        <h2>SMS Resistências Elétricas LTDA</h2>
+                        <h2>Rua do Alumínio, 500 - Parque São Pedro - Itaquaquecetuba - Brasil Cep 08586-220 - PABX: +55 (11) 2211-1088 / 4648-2397 / 94184-6682 / 7727-1214 </h2>
+                    </article>
+                    <img src="~/image/empresa_02.jpg" alt="">
+                </div>
+                <div class="contato">
+                    <iframe id="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3660.5825219289995!2d-46.33496298563301!3d-23.439443384743484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce7ca71e49eefb%3A0xaff021f92e5937a3!2sSMS%20Resist%C3%AAncias%20El%C3%A9tricas!5e0!3m2!1spt-BR!2sbr!4v1626025086665!5m2!1spt-BR!2sbr"
+                        width="450" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </article>
+                </div>
+            </div>
+        </section>

@@ -1,0 +1,83 @@
+@model FaleConosco
+
+@{
+    ViewData["Title"] = "Contato - ";
+      <link rel="stylesheet" href="~/css/contato.css"!important>
+    <link rel="stylesheet" href="~/css/reset.css" !important>
+}
+
+<section>
+            <h1>Contato</h1>
+            <h1>@ViewBag.Mensagem</h1>
+            <div class="contatos">
+                <div class="contato">
+                     <nav>
+                            <ul>
+                                <li><a asp-area="" asp-controller="Contato" asp-action="FaleConosco">fale Conosco</a></li>
+                                <li><a asp-area="" asp-controller="Contato" asp-action="Carreira">Carreira</a></li>
+                                <li><a asp-area="" asp-controller="Contato" asp-action="Localizacao">Localização</a></li>
+                                <li><a asp-area="" asp-controller="Contato" asp-action="Ouvidoria">Ouvidoria</a></li>
+                            </ul>
+                        </nav>
+                </div>
+                <div class="contato">
+
+                    <article class="texto">
+                        <h2>Fale Conosco</h2>
+                        <h1>SMS Resistências Elétricas LTDA</h1>
+                        <h2>
+                            Rua do Alumínio, 500 - Pq São Pedro - Itaquaquecetuba - SP - Brasil Cep 08586-220 - PABX: +55 (11) 2211-1088 / 4648-8533 / 9-4184-6682 / 7727-1214 Se preferir, envie e-mail para smsresistencias@smsresistencias.com.br</br>
+
+
+                            Clique aqui faça download do SMS - Código de Ética e Conduta</br>
+                            </br>
+
+                            Clique aqui faça download do SMS - Política de Saúde, Segurança e Meio Ambiente - Assinado</br>
+                            </br>
+
+                            Clique aqui faça download do SMS - Programa de Integridade</br>
+                            </br>
+                        </h2>
+
+                    </article>
+                    <figure><img src="~/image/contato_01.jpg" alt=""></figure>
+                    <figure><img src="~/image/empresa_02.jpg" alt=""></figure>
+
+                </div>
+                <div class="contato">
+                    <article class="texto">
+                        <form asp-action="FaleConosco" method="POST">
+                            <p>
+                                <label asp-for="Nome"><h2>Nome</h2></label><input asp-for="Nome" type="text" size="40" maxlength="50" placeholder="Nome Completo" required />
+                            </p>
+                            <p>
+                                <label asp-for="Empresa"><h2>Empresa</h2></label><input asp-for="Empresa" type="text" size="40" maxlength="30" placeholder="Nome da sua Empresa" required />
+                            </p>
+                            <p>
+                                <label asp-for="Email"><h2>E-mail</h2></label><input asp-for="Email" type="email" size="40" maxlength="50" placeholder="caracteres@email.com" required />
+                            </p>
+                            <p>
+                                <label asp-for="Telefone"><h2>Telefone</h2></label><input asp-for="Telefone" type="tel" size="40" maxlength="15" placeholder="(..) 9 0000-0000" required />
+                            </p>
+
+                            <p>
+                                <label asp-for="Conheceu"><h2>Como conheceu a SMS?</h2></label>
+                                <select asp-for="Conheceu" required>
+                                    <option value="google">Google</option>
+                                    <option value="revistas">Revistas</option>
+                                    <option value="feiras">Feiras</option>
+                                    <option value="indicacao">Indicação</option>
+                                    <option value="outros">Outros</option>
+                                </select>
+                            </p>
+                            <p>
+                                <label asp-for="Mensagem"><h2>Mensagem</h2></label>
+                                <textarea asp-for="Mensagem" maxlength="255" cols="35" rows="5" placeholder="Deixe aqui sua mensagem (255) caracteres" required></textarea>
+                            </p>
+
+                            <input id="botao" type="submit" value="Enviar">
+                        </form>
+                    </article>
+                </div>
+            </div>
+        </section>

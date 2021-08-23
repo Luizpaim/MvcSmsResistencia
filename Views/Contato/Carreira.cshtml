@@ -1,0 +1,89 @@
+@model Carreira
+@{
+    ViewData["Title"] = "Contato - ";
+      <link rel="stylesheet" href="~/css/contato.css"!important>
+    <link rel="stylesheet" href="~/css/reset.css" !important>
+}
+<section>
+            <h1>Contato</h1>
+            <h1>@ViewBag.Curriculo</h1>
+            <form asp-action="Carreira" method="POST">
+                <div class="contatos">
+
+                    <div class="contato">
+                        <nav>
+                            <ul>
+                                <li><a asp-area="" asp-controller="Contato" asp-action="FaleConosco">fale Conosco</a></li>
+                                <li><a asp-area="" asp-controller="Contato" asp-action="Carreira">Carreira</a></li>
+                                <li><a asp-area="" asp-controller="Contato" asp-action="Localizacao">Localização</a></li>
+                                <li><a asp-area="" asp-controller="Contato" asp-action="Ouvidoria">Ouvidoria</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="contato">
+
+                        <article class="texto">
+
+                            <p>
+                                <label asp-for="Nome"><h2>Nome</h2></label><input asp-for="Nome" type="text" size="40" maxlength="50" placeholder="Nome Completo" required/>
+                            </p>
+                            <p>
+                                <label asp-for="Telefone"><h2>Telefone</h2></label><input asp-for="Telefone" type="tel" size="40" maxlength="15" placeholder="(..) 9 0000-0000" required/>
+                            </p>
+                            <p>
+                                <label asp-for="Email"><h2>E-mail</h2></label><input asp-for="Email" type="email" size="40" maxlength="50" placeholder="caracteres@email.com" required/>
+                            </p>
+                            <p>
+                                <label asp-for="Endereco"><h2>Endereço</h2></label><input asp-for="Endereco" type="tel" size="40" maxlength="70" placeholder="Rua : N° : Bairro : " required/>
+                            </p>
+                            <p>
+                                <label asp-for="Cep"><h2>Cep</h2></label><input asp-for="Cep" type="tel" size="40" maxlength="10" placeholder="00000-000" required/>
+                            </p>
+
+
+                        </article>
+                        <img src="~/image/trabalhe_int.jpg" alt="">
+
+                    </div>
+                    <div class="contato">
+                        <article class="texto">
+                            <h2>Carreira</h2>
+                            <h2>&nbsp &nbsp &nbsp Na SMS, acreditamos que o sucesso está no talento das pessoas, por isso investimos na evolucão de nossos profissionais em todas as etapas de sua carreira.</br>
+                                &nbsp &nbsp &nbsp Venha fazer parte da mais moderna e dinâmica empresa do segmento!
+                            </h2>
+                        </article>
+                        <img src="~/image/contato_01.jpg" alt="">
+                        <article class="texto">
+                            <p>
+                                <label asp-for="Cidade"><h2>Cidade</h2></label><input asp-for="Cidade" type="tel" size="40" maxlength="30" placeholder="Sua Cidade" required/>
+                            </p>
+                            <p>
+                                <label asp-for="Estado"><h2>Estado</h2></label><input asp-for="Estado" type="tel" size="40" maxlength="20" placeholder="Seu Estado" required/>
+                            </p>
+
+                            <p>
+                                <label asp-for="Formacao"><h2>Formação Acadêmica</h2></label><input asp-for="Formacao" type="tel" size="40" maxlength="50" placeholder="Graduação" required/>
+                            </p>
+
+                            <p>
+                                <label asp-for="Area"><h2>Área Pretendida</h2></label>
+                                <select asp-for="Area" required>
+            <option value="Engenharia">Engenharia</option>
+            <option value="Produção">Produção</option>
+            <option value="Suprimentos">Suprimentos</option>
+            <option value="Administrativo">Administrativo</option>
+            <option value="Comercial">Comercial</option>
+            <option value="Recursos Humanos">Recursos Humanos</option>
+        </select>
+                            </p>
+                            <p>
+                                <label asp-for="Experiencias"><h2>Fale sobre suas experiências</h2></label>
+                                <textarea asp-for="Experiencias" cols="35" rows="5" placeholder="suas experiências" required></textarea>
+                            </p>
+
+                            <input id="botao" type="submit" value="Enviar">
+                        </article>
+                    </div>
+                </div>
+            </form>
+        </section>

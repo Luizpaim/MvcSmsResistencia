@@ -1,0 +1,111 @@
+@{
+    ViewData["Title"] = "Indústrias - ";
+      <link rel="stylesheet" href="~/css/industrias.css"!important>
+    <link rel="stylesheet" href="~/css/reset.css" !important>
+}
+ <section>
+            <h1>Indústrias</h1>
+            <div class="industrias">
+                <div class="industria">
+                         <nav>
+                        <ul>
+                            <li><a asp-area="" asp-controller="Industrias" asp-action="Tratamento">Tratamento de superfícies</a></li>
+                            <li><a asp-area="" asp-controller="Industrias" asp-action="Cozinha">Cozinha industrial</a></li>
+                            <li><a asp-area="" asp-controller="Industrias" asp-action="Biomedico">Biomédico</a></li>
+                            <li><a asp-area="" asp-controller="Industrias" asp-action="Refrigeracao">Refrigeração</a></li>
+                            <li><a asp-area="" asp-controller="Industrias" asp-action="Panificacao">Panificação</a></li>
+                            <li><a asp-area="" asp-controller="Industrias" asp-action="Embalagem">Embalagem</a></li>
+                            <li><a asp-area="" asp-controller="Industrias" asp-action="Plastico">Plástico</a></li>
+                            <li><a asp-area="" asp-controller="Industrias" asp-action="Lavanderia">Lavanderia</a></li>
+                            <li><a asp-area="" asp-controller="Industrias" asp-action="OleoGas">Óleo e gás</a></li>
+                            <li><a asp-area="" asp-controller="Industrias" asp-action="Processos">Processos industriais</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="industria">
+                    <article class="texto">
+                        <h1>Óleo e gás</h1>
+                        <h2>
+                            <p>A SMS entende que o Brasil se tornará um dos maiores produtores de óleo e gás do mundo e nós, como parte da cadeia, fornecemos aquecedores e controladores de temperatura.</p>
+
+                            <p>Investimos de forma consistente nos últimos anos com o objetivo de fornecer produtos de alta tecnologia com o melhor custo-benefício do mercado. </p>
+
+                            <p>Nossa meta é ajudar nossos clientes a reduzir custos através de equipamentos que proporcionem menores custos de instalação, maior eficiência de pré-aquecimento, maximização de eficiência energética e diminuição de parada de
+                                equipamentos.
+                            </p>
+                        </h2>
+                    </article>
+                </div>
+                <div class="industria">
+                    <figure>
+                        <img class="primeira" src="~/IMAGE/section/oleo-e-gas.jpg" alt="">
+                    </figure>
+                </div>
+
+                <div class="industria">
+                    <article class="texto">
+                        <h2>
+                            <p>Nossa linha de aquecedores à prova de explosão foi desenvolvida para garantir uma operação segura em ambientes com risco de explosão. Todos os nossos produtos são testados por laboratórios reconhecidos e certificados pelos
+                                maiores e melhores órgãos certificadores do país.</p>
+                            <br> Alguns dos produtos que podemos oferecer ao mercado:
+                            <br> • Resistências flangeadas;
+                            <br> • Aquecedores de passagem;
+                            <br> • Aquecedores de sucção; • Equipamentos à prova de explosão (Ex);
+                            <br> • Traço elétrico;
+                            <br> • Sensores de temperatura;
+                            <br> • Painéis de controle.
+                            <br>
+                        </h2>
+                    </article>
+                </div>
+            </div>
+            <div class="~/industrias">
+
+                <figure>
+                    <img class="segunda" src="~/IMAGE/section/oleo_01_peq.jpg" alt="">
+                    <figcaption>Aquecedor de Circulação</figcaption>
+                </figure>
+                <figure>
+                    <img class="segunda" src="~/IMAGE/section/oleo_02_peq.jpg" alt="">
+                    <figcaption>Aquecedor de Sucção</figcaption>
+                </figure>
+                <figure>
+                    <img class="segunda" src="~/IMAGE/section/oleo_03_peq.jpg" alt="">
+                    <figcaption>Painel de Comando</figcaption>
+                </figure>
+                <figure>
+                    <img class="segunda" src="~/IMAGE/section/oleo_04_peq.jpg" alt="">
+                    <figcaption>Traço Elétrico
+                    </figcaption>
+                </figure>
+
+            </div>
+            <div class="industrias">
+                <article class="texto">
+                   <a asp-area="" asp-controller="Contato" asp-action="FaleConosco">
+                    <h2>Contate-nos para mais informações sobre nossos produtos.</h2></a>
+                </article>
+            </div>
+
+        </section>
+<div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="~/image/banner/home.jpg" class="d-block w-100" alt="HOME">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="~/image/banner/home2.jpg" class="d-block w-100" alt="HOME">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="~/image/banner/home3.jpg" class="d-block w-100" alt="HOME">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
